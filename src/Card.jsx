@@ -34,7 +34,7 @@ const Card = ({ cardName, price, description, Bold, liteColor }) => {
       <div className='bold'>
         {Bold && (
           <p>
-            <i className="fa-solid fa-check"></i> <b>{Bold}</b>
+            <i className="fa fa-times"></i> <b>{Bold}</b>
           </p>
         )}
       </div>
