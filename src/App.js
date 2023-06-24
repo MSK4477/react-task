@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Card from './Card';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main">
+      <Card
+        cardName="FREE"
+        price="$0"
+        description={['Single User', '5GB Storage', "Unlimited Public Projects", "Community Access"]}
+        liteColor={["Unlimited Private Projects", "Dedicated Phone Support", "Free Subdomain", "Monthly Status Reports"]}
+      />
+      <Card
+        cardName="PLUS"
+        price="$9"
+        description={["5 Users", '50GB Storage', "Unlimited Public Projects", "Community Access", "Dedicated Phone Support", "Free Subdomain"]}
+        liteColor={["Monthly Status Reports"]}
+      />
+      <Card
+        cardName="PRO"
+        price="$49"
+        description={["Unlimited Users", '150GB Storage', "Unlimited Public Projects", "Community Access", "Unlimited Private Projects", "Dedicated Phone Support", "Unlimited Free Subdomain", "Monthly Status Reports"]}
+      />
     </div>
   );
 }
