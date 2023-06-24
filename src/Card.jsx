@@ -24,20 +24,14 @@ const Card = ({ cardName, price, description, Bold, liteColor }) => {
           <ul>
             {liteColor.map((item, index) => (
               <li key={index}>
-                <i className="fa-solid fa-check"></i>
+                <i className="fa fa-times"></i>
                 {item}
               </li>
             ))}
           </ul>
         )}
       </div>
-      <div className='bold'>
-        {Bold && (
-          <p>
-            <i className="fa fa-times"></i> <b>{Bold}</b>
-          </p>
-        )}
-      </div>
+      
       <div className='button'>
         <button>Click Me</button>
       </div>
