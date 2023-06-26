@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Card = ({ cardName, price, description, Bold, liteColor }) => {
+const Card = ({ cardName, price, description,  liteColor }) => {
   return (
     <div className="cardContainer">
       <div className="cardContent">
         <p className="cardName">{cardName}</p>
-        <p className="price">{price}<span>/month</span></p>
+        <p className="price">{price}<span><b>/month</b></span></p>
       </div>
       <div className='des'>
         {description && (
@@ -33,7 +33,7 @@ const Card = ({ cardName, price, description, Bold, liteColor }) => {
       </div>
       
       <div className='button'>
-        <button>Click Me</button>
+      <button type="button" className="btn btn-primary">Button</button>      
       </div>
     </div>
   );

@@ -14,13 +14,13 @@ const App = () => {
       <Card
         cardName="PLUS"
         price="$9"
-        description={["5 Users", '50GB Storage', "Unlimited Public Projects", "Community Access", "Dedicated Phone Support", "Free Subdomain"]}
+        description={[<b>5 Users </b>, '50GB Storage', "Unlimited Public Projects", "Community Access", "Dedicated Phone Support", "Free Subdomain"]}
         liteColor={["Monthly Status Reports"]}
       />
       <Card
         cardName="PRO"
         price="$49"
-        description={["Unlimited Users", '150GB Storage', "Unlimited Public Projects", "Community Access", "Unlimited Private Projects", "Dedicated Phone Support", "Unlimited Free Subdomain", "Monthly Status Reports"]}
+        description={[<b>Unlimited Users</b>, '150GB Storage', "Unlimited Public Projects", "Community Access", "Unlimited Private Projects", "Dedicated Phone Support", "Unlimited Free Subdomain", "Monthly Status Reports"]}
       />
     </div>
   );

@@ -14,11 +14,11 @@
   display: inline-block;
   margin: 16px;
   background-color: #fff;
-  transition: transform 0.3s  /* Add transition property */
+  transition: transform 0.3s  
 }
 
-.cardContainer:hover {
-  transform: translateY(-5px); /* Apply transform on hover */
+.cardContainer:hover{
+  transform: translateY(-5px);
 }
 
 
@@ -43,17 +43,13 @@
 .des p {
  color: rgb(46, 45, 45);
 }
-   /* .des i{
-  font-size: 10px;
-  color: rgb(10, 10, 10);
-} */
-.bold i{
-  font-size: 10px;
-  color: rgb(10, 10, 10);
+
+
+.price{
+  padding-bottom: 20px;
+ font-weight: bolder;
+ font-size: xx-large;
 }
-.bold p {
-  color: rgb(46, 45, 45);
- }
  .des ul {
   padding-left: 0;
 }
@@ -81,7 +77,7 @@
 .lite ul li {
   list-style: none;
   display: flex;
-  font-size: 20px;
+  font-size: 14px;
   align-items: center;
   text-align: left;
   color: rgb(121, 120, 120);
@@ -90,13 +86,12 @@
 
 .lite ul li i {
   margin-right: 5px;
-  font-size: 10px;
+  font-size: 18px;
+  padding: 4px;
   color: rgb(121, 120, 120);
 }
 
-.lite ul li:not(:last-child) {
-  margin-bottom: 5px;
-}
+
 .button{
   text-align: center;
 }
@@ -104,13 +99,31 @@
  
   background-color: rgb(17, 124, 231);
   font-size: 80%;
-  border-radius: 5rem;
-  letter-spacing: .1rem;
+  border-radius: 20px;
   font-weight: bold;
-  padding: 1rem;
+  padding: 0.5rem;
+  color: #ffffff;
   opacity: 0.7;
-  transition: all 0.2s;
+  transition: 0.3s;
+  width: 15em;
 }
-.button button:hover{
+
+.cardContainer:hover .button button{
   opacity: 1;
 }
+@media screen and (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .cardContainer {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
