@@ -26,6 +26,9 @@
 .cardContent  .cardName{
   text-align: center;
   color: rgb(121, 120, 120);
+  font-weight: bolder;
+  font-size: 12px;
+  
 }
 .cardContent .price{
   border-bottom: 1px solid #797878;
