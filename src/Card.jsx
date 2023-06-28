@@ -8,22 +8,27 @@ const Card = ({ cardName, price, description,  liteColor }) => {
         <p className="price">{price}<span><b>/month</b></span></p>
       </div>
       <div className='des'>
-        {description && (
-          <ul>
-            {description.map((item, index) => (
-              <li key={index}>
-                <i className="fa-solid fa-check"></i>
-                {item}
-              </li>
-            ))}
-          </ul>
-        )}
+
+      
+    
+        <div className='des'>
+  <ul>
+    {description.map((item) => (
+      <li>
+        <i className="fa-solid fa-check"></i>
+        {item}
+      </li>
+    ))}
+  </ul>
+</div>
       </div>
+       {/* {litecolor && ...} is used to check if the liteColor variable exists 
+      and is not null or undefined before rendering the JSX code inside the parentheses. */}
       <div className='lite'>
         {liteColor && (
           <ul>
-            {liteColor.map((item, index) => (
-              <li key={index}>
+            {liteColor.map((item) => (
+              <li >
                 <i className="fa fa-times"></i>
                 {item}
               </li>
@@ -31,6 +36,7 @@ const Card = ({ cardName, price, description,  liteColor }) => {
           </ul>
         )}
       </div>
+
       
       <div className='button'>
       <button type="button" className="btn btn-primary">Button</button>      
